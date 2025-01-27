@@ -1,0 +1,155 @@
+/* --------------------------------------------
+              Google Fonts
+   -------------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+/* --------------------------------------------
+              CSS Color Variable
+   -------------------------------------------- */
+:root{
+    --primary-bg:#042f66;
+    --secondary-bg:#f8a932;
+
+    --primary-text:#ffffff;
+    --secondary-text:#f8a932;
+
+    --primary-border:#ffffff;
+}
+
+
+
+/* --------------------------------------------
+              Common CSS
+   -------------------------------------------- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", serif !important;
+}
+   a{
+    text-decoration: none;
+    display: inline-block;
+   }
+   a:hover{
+    text-decoration: none;
+   }
+   ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+   }
+   img{
+    width: 100%;
+    height: auto;
+   }
+   h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+    padding: 0;
+   }
+
+
+
+/* --------------------------------------------
+            Top  Header CSS
+   -------------------------------------------- */
+   .header .header_top{
+    background-color: var(--primary-bg);
+    color: var(--primary-text);
+   }
+   
+   .header .header_top .row{
+      justify-content: space-between !important;
+   }
+   .header .header_top .login_buttons a,
+   .header .header_top .contact_info a{
+    display: inline-block;
+    color: var(--primary-text);
+    border: 1px solid var(--primary-border);
+    border-radius: 1rem;
+    padding: 0.35rem .8rem;
+    transition: 0.5s;
+   }
+   .header .header_top .login_buttons a:hover,
+   .header .header_top .contact_info a:hover{
+   background-color: var(--secondary-bg);
+   }
+
+
+
+   /* --------------------------------------------
+            Middle  Header CSS
+   -------------------------------------------- */
+   .header .middle_header .logo img{
+    width: 5rem;
+    height: 5rem;
+   }
+
+
+
+   /* --------------------------------------------
+            Bottom  Header CSS
+   -------------------------------------------- */
+   .header .bottom_header{
+      background-color: var(--primary-bg);
+   }
+   .header .bottom_header .my_navbar ul{
+      justify-content: space-between;
+   }
+   .header .bottom_header .my_navbar > ul > li{
+      padding: 1rem 1.2rem;
+      transition: 0.5s;
+   }
+   .header .bottom_header .my_navbar ul li:hover{
+      background: #f8a932;
+   }
+   .header .bottom_header .my_navbar ul li a{
+      /* display: block; */
+      color: var(--primary-text);
+      font-size: 1.4rem;
+   }
+   .header .bottom_header .my_navbar  ul li a:hover{
+      color: rgb(247, 73, 5);
+   }
+      /* Student dropdown menu */
+   .header .bottom_header .my_navbar .dropdown_menu{
+      position: relative;
+   }
+   .header .bottom_header .my_navbar .dropdown_menu .sub_menu {
+      position: absolute;
+      top: 105%;
+      left: 0;
+      right: 0;
+      width: 200px;
+      padding: 1rem;
+      background: var(--primary-bg);
+      height: 0;
+      padding: 0;
+      opacity: 0;
+      visibility: hidden;
+      transition: .4s ease-in-out;
+   }
+   .header .bottom_header .my_navbar .dropdown_menu:hover .sub_menu {
+      position: absolute;
+      top: 105%;
+      left: 0;
+      right: 0;
+      width: 200px;
+      padding: 1rem;
+      background: var(--primary-bg);
+      height: auto;
+      opacity: 1;
+      visibility: visible;
+      padding: 0.4rem;
+      
+   }
+   .header .bottom_header .my_navbar .dropdown_menu .sub_menu li{
+      border-bottom: 1px solid #f5f2f2;
+      width: 100%;
+      padding-top: 10px;
+   }
+   .header .bottom_header .my_navbar .dropdown_menu .sub_menu li:last-child{
+      border-bottom:0;
+   }
