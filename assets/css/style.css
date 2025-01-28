@@ -11,6 +11,7 @@
 :root{
     --primary-bg:#042f66;
     --secondary-bg:#f8a932;
+    --black-bg:#000000;
 
     --primary-text:#ffffff;
     --secondary-text:#f8a932;
@@ -50,7 +51,9 @@
     padding: 0;
    }
 
-
+section{
+   padding: 100px 0;
+}
 
 /* --------------------------------------------
             Top  Header CSS
@@ -157,7 +160,40 @@
 
 
 /* --------------------------------------------
-            Bottom  Header CSS
+            FAQ CSS
+   -------------------------------------------- */
+   .faq_section .faq_wrapper .faq_item .faq_title{
+      background-color: var(--black-bg);
+      padding: 10px 15px;
+   }
+   .faq_section .faq_wrapper .faq_item .faq_title .faq_arrow{
+      color: var(--primary-text);
+   }
+   .faq_section .faq_wrapper .faq_item.active .faq_title .faq_arrow{
+      transform: rotate(90deg);
+   }
+   .faq_section .faq_wrapper .faq_item .faq_title h3{
+      color: white;
+   }
+   .faq_section .faq_wrapper .faq_item .faq_description {
+      display: none;
+      background-color: white;
+      padding: 10px 15px;
+   }
+   .faq_section .faq_wrapper .faq_item .faq_description p{
+      
+      text-align: justify;
+   }
+   
+   .faq_section .faq_wrapper .faq_item.active .faq_description {
+      display: block;
+   }
+   
+
+
+
+/* --------------------------------------------
+            Live Chatbox CSS
    -------------------------------------------- */
    .my_chat_wrapper{
       position: fixed;
